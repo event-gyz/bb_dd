@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/**
+ * 
+ * @title myOrder
+ * @authors goodliang
+ * @date 2016-02-17 17:02:44
+ * 
+ */
+.f12{
+    font-size: 12px !important;
+}
+.red{
+    color:#be0000;
+    font-size: 16px;
+    font-style: normal;
+    
+}
+.w100{
+    width: 100px;
+}
+.table-order td{
+	vertical-align: middle !important;
+}
+.eq_filter_area {
+    overflow: hidden;
+}
+
+.eq_filter {
+    overflow: hidden;
+
+}
+
+.eq_filter a {
+    cursor: pointer;
+    color: #666;
+}
+
+.eq_filter dt,
+.eq_filter dd {
+    float: left
+}
+
+.eq_filter dt {
+    color: #999;
+    font-weight: normal;
+    width: 50px;
+}
+
+.eq_filter dd {
+    padding-right: 20px;
+}
+
+.eq_filter dd a {
+    padding: 0 8px;
+    display: inline-block;
+}
+
+.eq_filter dd.active a {
+    background: #be0000;
+    color: #fff;
+}
+.eq_list{
+    margin-top: 25px;
+}
+.eq_search .form-group label {
+    color: #999 !important;
+}
+.order_info{
+	width:100%;
+	text-align: left;
+	margin-bottom: 0;
+}
+.order_info dt{
+	float: left;
+}
+.order_info dd{
+	margin-left: 140px;
+}
+.order_info dd.tit{
+	padding: 20px 0 5px;
+}
+.order_info dd.date{
+	font-size: 13px;
+	color:#999;
+}
+.table-order .btn{
+	margin-bottom: 5px;
+}
+
+.eq_detailed {
+    overflow: hidden;
+}
+
+.eq_detailed ul {
+    margin-bottom: 0;
+}
+
+.eq_detailed li {
+    float: left;
+    margin-right: 20px;
+}
+
+.eq_list_bt {
+    border: 1px solid #ddd;
+    border-top-width: 0;
+    padding: 8px 10px;
+    overflow: hidden;
+}
+.processing_orders{
+	padding: 20px 20px 0;
+	overflow: hidden;
+	display: none;
+}
+.layui-layer-btn{
+	text-align: center !important;
+}
+.order_bottom .tip{
+    padding-top: 10px;
+    line-height: 22px;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.order_layer{
+    padding: 30px 20px;
+    overflow: hidden;
+    display: none;
+    font-size: 13px !important;
+}
+.input_none{
+    border:0;
+    width: 60px !important;
+    min-width: inherit !important;
+    text-align: center;
+}
+textarea.none_line{
+    width: 350px;
+}
+.payment_form{
+    padding: 30px 0;
+    overflow: hidden;
+}
+.payment_mode ul{
+    margin-bottom: 0;
+}
+.payment_mode li{
+    float: left;
+    padding: 5px 12px;
+    margin-right:15px;
+    border:2px solid #cccccc;
+    position: relative;
+    cursor: pointer;
+}
+.payment_mode li .iconfont{
+    display: none;
+    position: absolute;
+    right: -1px;
+    bottom:-3px;
+    color:#be0000;
+}
+.payment_mode li.active{
+    border:2px solid #be0000 ;
+}
+.payment_mode li.active .iconfont{
+    display: block;
+}
+.order_bt_btn{
+    padding-top: 20px;
+}
+.order_bt_btn button{
+    margin: 0 10px;
+}

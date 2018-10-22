@@ -1,0 +1,266 @@
+.vue-input-number {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    color: #666;
+    cursor: text;
+    display: inline-block;
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    transition: border 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    vertical-align: middle;
+    width: 80px;
+}
+.vue-input-number::-moz-placeholder {
+    color: #ccc;
+    opacity: 1;
+}
+.vue-input-number:focus {
+    border-color: #57c5f7;
+    box-shadow: 0 0 0 2px rgba(45, 183, 245, 0.2);
+    outline: 0 none;
+}
+.vue-input-number[disabled], fieldset[disabled] .vue-input-number {
+    background-color: #f7f7f7;
+    color: #ccc;
+    cursor: not-allowed;
+    opacity: 1;
+}
+.vue-input-number[disabled]:hover, fieldset[disabled] .vue-input-number:hover {
+    border-color: #e1e1e1;
+}
+textarea.vue-input-number {
+    height: auto;
+    max-width: 100%;
+    vertical-align: bottom;
+}
+.vue-input-number-lg {
+    height: 32px;
+    padding: 6px 7px;
+}
+.vue-input-number-sm {
+    height: 22px;
+    padding: 1px 7px;
+}
+.vue-input-number-handler {
+    color: #999;
+    display: block;
+    height: 14px;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: all 0.1s linear 0s;
+    width: 100%;
+}
+.vue-input-number-handler:hover {
+    background: #fefefe none repeat scroll 0 0;
+}
+.vue-input-number-handler:hover .vue-input-number-handler-down-inner, .vue-input-number-handler:hover .vue-input-number-handler-up-inner {
+    color: #57c5f7;
+}
+.vue-input-number-handler-down-inner, .vue-input-number-handler-up-inner {
+    -moz-user-select: none;
+    color: #999;
+    display: inline-block;
+    font-size: 12px;
+    font-style: normal;
+    height: 12px;
+    line-height: 12px;
+    position: absolute;
+    right: 4px;
+    text-align: center;
+    text-rendering: optimizelegibility;
+    text-transform: none;
+    transform: scale(0.583333) rotate(0deg);
+    transition: all 0.1s linear 0s;
+    vertical-align: baseline;
+    width: 12px;
+}
+.vue-input-number-handler-down-inner::before, .vue-input-number-handler-up-inner::before {
+    display: block;
+    font-family: vueicon !importvue;
+}
+:root .vue-input-number-handler-down-inner, *:root .vue-input-number-handler-up-inner {
+    filter: none;
+    font-size: 12px;
+}
+.vue-input-number:hover {
+    border-color: #57c5f7;
+}
+.vue-input-number-focused {
+    border-color: #57c5f7;
+    box-shadow: 0 0 0 2px rgba(45, 183, 245, 0.2);
+    outline: 0 none;
+}
+.vue-input-number-disabled {
+    background-color: #f7f7f7;
+    color: #ccc;
+    cursor: not-allowed;
+    opacity: 1;
+}
+.vue-input-number-disabled:hover {
+    border-color: #e1e1e1;
+}
+.vue-input-number-input-wrap {
+    height: 28px;
+    overflow: hidden;
+}
+.vue-input-number-input {
+    -moz-appearance: textfield;
+    border: 0 none;
+    color: #666;
+    height: 28px;
+    line-height: 28px;
+    font-size: 20px;
+    outline: 0 none;
+    padding: 0 7px;
+    text-align: left;
+    transition: all 0.3s linear 0s;
+    width: 100%;
+}
+.vue-input-number-input[disabled] {
+    background-color: #f7f7f7;
+    color: #ccc;
+    cursor: not-allowed;
+    opacity: 1;
+}
+.vue-input-number-input[disabled]:hover {
+    border-color: #e1e1e1;
+}
+.vue-input-number-lg {
+    padding: 0;
+}
+.vue-input-number-lg .vue-input-number-handler-wrap, .vue-input-number-lg .vue-input-number-input-wrap {
+    height: 32px;
+}
+.vue-input-number-lg .vue-input-number-handler {
+    height: 16px;
+}
+.vue-input-number-lg input {
+    height: 32px;
+    line-height: 32px;
+}
+.vue-input-number-lg .vue-input-number-handler-up-inner {
+    top: 2px;
+}
+.vue-input-number-lg .vue-input-number-handler-down-inner {
+    bottom: 2px;
+}
+.vue-input-number-lg .vue-input-number-handler-up:hover {
+    height: 18px;
+}
+.vue-input-number-sm {
+    padding: 0;
+}
+.vue-input-number-sm .vue-input-number-handler-wrap, .vue-input-number-sm .vue-input-number-input-wrap {
+    height: 22px;
+}
+.vue-input-number-sm .vue-input-number-handler {
+    height: 11px;
+}
+.vue-input-number-sm input {
+    height: 22px;
+    line-height: 22px;
+    margin-top: -1px;
+    vertical-align: top;
+}
+.vue-input-number-sm .vue-input-number-handler-up-inner {
+    top: -1px;
+}
+.vue-input-number-sm .vue-input-number-handler-down-inner {
+    bottom: -1px;
+}
+.vue-input-number-sm .vue-input-number-handler-up:hover {
+    height: 13px;
+}
+.vue-input-number-sm .vue-input-number-handler-down:hover .vue-input-number-handler-down-inner {
+    bottom: 4px;
+}
+.vue-input-number-handler-wrap {
+    background: #fff none repeat scroll 0 0;
+    border-left: 1px solid #d9d9d9;
+    height: 28px;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 0.24s linear 0.1s;
+    width: 22px;
+}
+.vue-input-number:hover .vue-input-number-handler-wrap {
+    opacity: 1;
+}
+.vue-input-number-handler-up {
+    cursor: pointer;
+}
+.vue-input-number-handler-up-inner {
+    top: 1px;
+}
+.vue-input-number-handler-up-inner::before {
+    content: "◇";
+    text-align: center;
+    font-size: 36px;
+    transform:rotate(90deg) translateX(-2px);
+	-ms-transform:rotate(90deg) translateX(-2px); 	/* IE 9 */
+	-moz-transform:rotate(90deg) translateX(-2px); 	/* Firefox */
+	-webkit-transform:rotate(90deg) translateX(-2px); /* Safari 和 Chrome */
+	-o-transform:rotate(90deg) translateX(-2px); 	/* Opera */
+	opacity: .8;
+	width: 10px;
+	height: 15px;
+	overflow: hidden;
+}
+.vue-input-number-handler-up:hover {
+    height: 16px;
+}
+.vue-input-number-handler-up:hover .vue-input-number-handler-up-inner {
+    margin-top: 2px;
+}
+.vue-input-number-handler-down {
+    border-top: 1px solid #d9d9d9;
+    cursor: pointer;
+    top: -1px;
+}
+.vue-input-number-handler-down-inner::before {
+    content: "◇";
+    text-align: center;
+    font-size: 36px;
+    transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg); 	/* IE 9 */
+	-moz-transform:rotate(-90deg); 	/* Firefox */
+	-webkit-transform:rotate(-90deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-90deg); 	/* Opera */
+	opacity: .8;
+width:10px;
+	height: 15px;
+		overflow: hidden;
+
+}
+.vue-input-number-handler-down:hover {
+    height: 16px;
+    margin-top: -2px;
+}
+.vue-input-number-disabled .vue-input-number-handler-down-inner, .vue-input-number-disabled .vue-input-number-handler-up-inner, .vue-input-number-handler-down-disabled .vue-input-number-handler-down-inner, .vue-input-number-handler-down-disabled .vue-input-number-handler-up-inner, .vue-input-number-handler-up-disabled .vue-input-number-handler-down-inner, .vue-input-number-handler-up-disabled .vue-input-number-handler-up-inner {
+    color: #ccc !important;
+    cursor: not-allowed;
+    opacity: 0.72;
+}
+.vue-input-number-disabled .vue-input-number-input {
+    background-color: #f3f3f3;
+    cursor: not-allowed;
+    opacity: 0.72;
+}
+.vue-input-number-disabled .vue-input-number-handler-wrap {
+    display: none;
+}
+.vue-input-number-disabled .vue-input-number-handler {
+    color: #ccc !important;
+    cursor: not-allowed;
+    opacity: 0.72;
+}

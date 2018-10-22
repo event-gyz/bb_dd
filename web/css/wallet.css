@@ -1,0 +1,917 @@
+/* *{
+    box-sizing: content-box;
+} */
+
+
+@font-face {font-family: "iconfont";
+    src: url('//at.alicdn.com/t/font_og13f713pkg1fw29.eot?t=1498725627687'); /* IE9*/
+    src: url('//at.alicdn.com/t/font_og13f713pkg1fw29.eot?t=1498725627687#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/font_og13f713pkg1fw29.woff?t=1498725627687') format('woff'), /* chrome, firefox */
+    url('//at.alicdn.com/t/font_og13f713pkg1fw29.ttf?t=1498725627687') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/font_og13f713pkg1fw29.svg?t=1498725627687#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html, body, ul, li, dl, dt, dd, p, div {
+    padding: 0;
+    margin: 0;
+}
+.u_content,.u_content >*{
+    box-sizing: content-box;
+}
+#laydate_box>*{
+    box-sizing: content-box;
+}
+input{
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-tap-highlight-color: transparent;
+    color: #333;
+}
+input:focus, textarea:focus {
+    border: 1px solid #66afe9;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    outline: none;
+}
+a:hover, a:focus {
+    text-decoration: none;
+    color: #a51c30;
+}
+.breadcrumb {
+    margin-right: 30px;
+}
+.tab_li {
+    width: 100%;
+    position: relative;
+    height: 32px;
+    margin-top: 20px;
+}
+
+.tab_li .li.over {
+    color: #c30f00;
+}
+
+.tab_li .li {
+    font-size: 14px;
+    padding: 0 1px 5px 1px;
+    margin-right: 30px;
+}
+
+.tab_li .over {
+    border-bottom: 2px solid #c30f00;
+    color: #202426;
+    font-weight: bold;
+}
+
+.tab_li .li {
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+
+.my_wallet {
+    background-color: #f7f7f7;
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.l_c_box .icon_box {
+    float: left;
+    width: 70px;
+    height: 70px;
+    line-height: 70px !important;
+    text-align: center;
+    color: #e8941b;
+}
+
+.l_c_box .icon_box i.icon {
+    font-size: 62px;
+}
+
+.l_c_box .r_t {
+    margin-left: 90px;
+}
+
+.l_c_box .r_t .balance {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.r_c_box {
+    margin-top: 20px;
+}
+
+
+.r_c_box .btn {
+        padding: 5px 20px;
+        background: #a51c30;
+        border: 1px solid #ddd;
+        margin-left: 10px;
+        margin-right: 30px;
+        color: #fff;
+}
+
+
+.r_c_box .btn:hover {
+    background: #731717;
+    color: #fff;
+}
+
+.jilu {
+    margin-top: 30px;
+}
+
+.qh_ul {
+    border-left: 1px solid #ccc;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.qh_ul li {
+    float: left;
+    border-top: 2px solid #ddd;
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+
+.qh_ul li a {
+    display: block;
+    padding: 10px 30px;
+}
+
+.qh_ul li.over {
+    border-top-color: #a51c30;
+    margin-bottom: 1px solid #f7f7f7;
+}
+
+.qh_ul li.over a {
+    color: #a51c30;
+}
+
+.con_box {
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    padding: 20px;
+    display: none;
+    margin-right: 30px;
+}
+
+.s_tj {
+    margin-right: 50px;
+    line-height: 32px;
+    margin-bottom: 15px;
+}
+
+.s_tj .item-label {
+    display: inline-block;
+    width: 50px;
+}
+
+.s_tj input {
+    line-height: 26px;
+}
+
+.s_tj .line {
+    margin: 0 10px;
+}
+
+.s_tj .zj_tm {
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    line-height: 26px;
+    margin-right: 15px;
+}
+
+.s_tj .zj_tm .span {
+    display: inline-block;
+   
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+.s_tj .zj_tm .span:hover {
+    color: #a51c30;
+}
+
+.s_tj .zj_tm .span.over {
+    line-height: 26px;
+    padding: 0 15px;
+    background-color: #a51c30;
+    border-radius: 3px;
+    color: #fff;
+}
+
+
+.s_tj .select {
+    padding: 5px 20px;
+    background: #a51c30;
+    border-radius: 2px;
+}
+
+.s_tj .select:hover {
+ 
+    background: #731717;
+
+}
+.s_tj a {
+    color: #FFF;
+}
+
+.con_nr .table > tbody > tr > td,
+.table > tfoot > tr > td {
+    vertical-align: middle;
+}
+
+.cz_tit {
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px auto 0;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.cz_content .yue_wallet {
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.cz_content .yue_wallet span {
+    font-size: 20px;
+    color: #e4393c;
+    margin-left: 12px;
+    display: inline;
+}
+
+.cz_content .form-group {
+    overflow: hidden;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.cz_content .control-label {
+    padding-top: 7px;
+}
+
+
+/*swl*/
+
+.withdraw_top em {
+    color: #be0000;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.withdraw_cnt {
+    padding: 10px 50px;
+}
+
+.withdraw_main {
+    background: #eeeeee;
+    overflow: hidden;
+    padding: 20px 0 0;
+}
+
+.withdraw_link {
+    text-align: right;
+    padding-bottom: 5px;
+}
+
+.withdraw_link a {
+    margin-left: 10px;
+}
+
+.play_list {
+    background: #fff;
+    overflow: hidden;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+}
+
+.play_list .info i,
+.play_list .info b,
+.play_list .info em {
+    float: left;
+    font-style: normal;
+}
+
+.play_list .info {
+    display: block;
+}
+
+.play_list .info b {
+    font-weight: normal;
+    padding: 0 5px;
+}
+
+
+/*.play_list .info em {
+    font-style: normal;
+    margin-left: 20px;
+    line-height: 28px;
+}*/
+
+
+/*.play_list input{
+    margin: 8px 0 0 ;
+    margin-top: 5px\9;
+}*/
+
+.play_list .info i {
+    padding-right: 30px;
+}
+
+.play_help {
+    color: #be0000;
+}
+
+.cmb {
+    background-image: url(../images/combo.png);
+}
+
+.card_main {
+    padding: 30px 0;
+    overflow: hidden;
+    width: 110%;
+}
+
+.card_area {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 295px;
+    height: 160px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.card_area .state {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 59px;
+    height: 59px;
+    background: url(../images/examine.png) no-repeat;
+}
+
+.card_area .state-danger {
+    background-position: 0 0;
+}
+
+.card_area .state-success {
+    background-position: 0 -60px;
+}
+
+.card_area .state-warning {
+    background-position: 0 -120px;
+}
+
+.card_area .tit {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.card_area .num {
+    background: #fdeee6;
+    padding: 3px 10px;
+    word-spacing: 8px;
+    letter-spacing: 1px;
+}
+
+.card_area .tip {
+    float: right;
+    cursor: pointer;
+    padding-top: 3px;
+}
+
+.card_area .tip i.icon {
+    margin-left: 5px;
+    color: #f85a66;
+}
+
+.card_logo {
+    overflow: hidden;
+    padding: 15px 10px;
+}
+
+.card_area .set {
+    padding: 10px 10px 0;
+    overflow: hidden;
+}
+
+.card_area .set .on {
+    float: left;
+}
+
+.card_area .set .on i.icon {
+    float: left;
+    margin-right: 5px;
+    color: #78BA32;
+}
+
+.card_area .set .del {
+    color: #be0000;
+    margin-left: 5px;
+}
+
+.card_area .add {
+    text-align: center;
+    margin-top: 34px;
+}
+
+.card_area .add i.icon {
+    font-size: 40px;
+    color: #999;
+}
+
+.card_area:hover {
+    background: #f9f9f9;
+}
+
+.wallet_layer {
+    overflow: hidden;
+    display: none;
+    padding-bottom: 20px;
+}
+
+.top_info {
+    font-size: 12px !important;
+    background: #fdeee6;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.ly1,
+.ly3 {
+    padding-top: 30px;
+}
+
+.red {
+    color: #be0000;
+}
+
+
+/*银行图标*/
+
+.bank-logo {
+    background-image: url(../images/bank-logo.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 125px;
+    height: 28px;
+    overflow: hidden;
+    text-indent: -9999px;
+    float: left;
+}
+
+#bank-bjrcb {
+    background-position: 0 0
+}
+
+#bank-bob {
+    background-position: 0 -28px
+}
+
+#bank-cbhb {
+    background-position: 0 -56px
+}
+
+#bank-bocd {
+    background-position: 0 -84px
+}
+
+#bank-fudian {
+    background-position: 0 -112px
+}
+
+#bank-icbc {
+    background-position: 0 -140px
+}
+
+#bank-ceb {
+    background-position: 0 -168px
+}
+
+#bank-cgb,
+#bank-gdb {
+    background-position: 0 -196px
+}
+
+#bank-hkb {
+    background-position: 0 -224px
+}
+
+#bank-hzb {
+    background-position: 0 -252px
+}
+
+#bank-hengfeng {
+    background-position: 0 -280px
+}
+
+#bank-hxb {
+    background-position: 0 -308px
+}
+
+#bank-ccb {
+    background-position: 0 -336px
+}
+
+#bank-jsb {
+    background-position: 0 -364px
+}
+
+#bank-bcm,
+#bank-bcom {
+    background-position: 0 -392px
+}
+
+#bank-jinghua {
+    background-position: 0 -420px
+}
+
+#bank-cmbc {
+    background-position: 0 -448px
+}
+
+#bank-njcb {
+    background-position: 0 -476px
+}
+
+#bank-nbcb {
+    background-position: 0 -504px
+}
+
+#bank-abc {
+    background-position: 0 -532px
+}
+
+#bank-pab {
+    background-position: 0 -560px
+}
+
+#bank-spdb {
+    background-position: 0 -588px
+}
+
+#bank-qdccb {
+    background-position: 0 -616px
+}
+
+#bank-srcb {
+    background-position: 0 -644px
+}
+
+#bank-bos,
+#bank-shb {
+    background-position: 0 -672px
+}
+
+#bank-sdb {
+    background-position: 0 -700px
+}
+
+#bank-wzcb {
+    background-position: 0 -728px
+}
+
+#bank-cib {
+    background-position: 0 -756px
+}
+
+#bank-cmb {
+    background-position: 0 -784px
+}
+
+#bank-zjtl {
+    background-position: 0 -812px
+}
+
+#bank-boc {
+    background-position: 0 -840px
+}
+
+#bank-post,
+#bank-psbc {
+    background-position: 0 -868px
+}
+
+#bank-citic {
+    background-position: 0 -896px
+}
+
+#bank-cqrcb {
+    background-position: 0 -924px
+}
+
+#bank-cqcb {
+    background-position: 0 -952px
+}
+
+#bank-gzrcc {
+    background-position: 0 -980px
+}
+
+#bank-gzcb {
+    background-position: 0 -1008px
+}
+
+#bank-hsb {
+    background-position: 0 -1036px
+}
+
+#bank-czb {
+    background-position: 0 -1064px
+}
+
+#bank-bonc {
+    background-position: 0 -1092px
+}
+
+#bank-gdnyb {
+    background-position: 0 -1120px
+}
+
+#bank-chab {
+    background-position: 0 -1148px
+}
+
+#bank-dylscz {
+    background-position: 0 -1177px
+}
+
+#bank-dzb {
+    background-position: 0 -1205px
+}
+
+#bank-lwb {
+    background-position: 0 -1904px
+}
+
+#bank-qsb {
+    background-position: 0 -1260px
+}
+
+#bank-rzb {
+    background-position: 0 -1289px
+}
+
+#bank-tab {
+    background-position: 0 -1317px
+}
+
+#bank-lsb {
+    background-position: 0 -1345px
+}
+
+#bank-wfccb {
+    background-position: 0 -1373px
+}
+
+#bank-ordos {
+    background-position: 0 -1401px
+}
+
+#bank-boxm {
+    background-position: 0 -1430px
+}
+
+#bank-bolj {
+    background-position: 0 -1456px
+}
+
+#bank-jzcb {
+    background-position: 0 -1484px
+}
+
+#bank-jjccb {
+    background-position: 0 -1512px
+}
+
+#bank-cjccb {
+    background-position: 0 -1568px
+}
+
+#bank-boly {
+    background-position: 0 -1596px
+}
+
+#bank-hubnx {
+    background-position: 0 -1623px
+}
+
+#bank-bhrcb {
+    background-position: 0 -1708px
+}
+
+#bank-hbnx {
+    background-position: 0 -1794px
+}
+
+#bank-gsnx {
+    background-position: 0 -1652px
+}
+
+#bank-bsb {
+    background-position: 0 -1820px
+}
+
+#bank-shxnx {
+    background-position: 0 -1764px
+}
+
+#bank-jsnx {
+    background-position: 0 -1681px
+}
+
+#bank-whrcb {
+    background-position: 0 -1736px
+}
+
+#bank-jzb {
+    background-position: 0 -1876px
+}
+
+#bank-drcb {
+    background-position: 0 -1848px
+}
+
+#bank-nmgnx {
+    background-position: 0 -1959px
+}
+
+#bank-pzhccb {
+    background-position: 0 -1989px
+}
+
+#bank-egb {
+    background-position: 0 -1932px
+}
+
+#bank-dyccb {
+    background-position: 0 -2045px
+}
+
+#bank-whccb {
+    background-position: 0 -2155px
+}
+
+#bank-jlnx {
+    background-position: 0 -2073px
+}
+
+#bank-sxnx {
+    background-position: 0 -2128px
+}
+
+#bank-bojn {
+    background-position: 0 -2100px
+}
+
+#bank-bozz {
+    background-position: 0 -2213px
+}
+
+#bank-ytcb {
+    background-position: 0 -2184px
+}
+
+#bank-bobd {
+    background-position: 0 -2016px
+}
+
+#bank-scnx {
+    background-position: 0 -2324px
+}
+
+#bank-hnnx {
+    background-position: 0 -2379px
+}
+
+#bank-bogy {
+    background-position: 0 -2240px
+}
+
+#bank-lzcb {
+    background-position: 0 -2295px
+}
+
+#bank-bogl {
+    background-position: 0 -2268px
+}
+
+#bank-zjtlcb {
+    background-position: 0 -2353px
+}
+
+#bank-boyk {
+    background-position: 0 -2548px
+}
+
+#bank-hunnx {
+    background-position: 0 -2576px
+}
+
+#bank-lnnx {
+    background-position: 0 -2408px
+}
+
+#bank-shbank {
+    background-position: 0 -2464px
+}
+
+#bank-lycb {
+    background-position: 0 -2436px
+}
+
+#bank-zjkccb {
+    background-position: 0 -2716px
+}
+
+#bank-boxia {
+    background-position: 0 -2521px
+}
+
+#bank-gznx {
+    background-position: 0 -2604px
+}
+
+#bank-czcb {
+    background-position: 0 -2688px
+}
+
+#bank-tjrcb {
+    background-position: 0 -2660px
+}
+
+#bank-hbcl {
+    background-position: 0 -2632px
+}
+
+#bank-gxnx {
+    background-position: 0 -2772px
+}
+
+#bank-pjccb {
+    background-position: 0 -2744px
+}
+
+#bank-bosj {
+    background-position: 0 -2800px
+}
+
+#bank-xhdlcz {
+    background-position: 0 -2829px
+}
+
+#bank-zjgrcb {
+    background-position: 0 -2856px
+}
+
+#bank-jnrcb {
+    background-position: 0 -2884px
+}
+
+#bank-jyrcb {
+    background-position: 0 -2912px
+}
+
+#bank-ksrcb {
+    background-position: 0 -2940px
+}
+
+#bank-tcrcb {
+    background-position: 0 -2968px
+}
+
+#bank-wjrcb {
+    background-position: 0 -2996px
+}
+
+#bank-urb {
+    background-position: 0 -3025px
+}
+
+#bank-yrrcb {
+    background-position: 0 -3080px
+}
+
+#bank-hanabank {
+    background-position: 0 -3053px
+}
+
+#bank-xjnx {
+    background-position: 0 -3109px
+}

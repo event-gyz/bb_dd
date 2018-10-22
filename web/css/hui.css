@@ -1,0 +1,351 @@
+* {
+    font-size: 14px;
+    font-family: 'Arial', 'Microsoft YaHei'
+}
+@font-face {font-family: "iconfont";
+    src: url('//at.alicdn.com/t/font_og13f713pkg1fw29.eot?t=1498725627687'); /* IE9*/
+    src: url('//at.alicdn.com/t/font_og13f713pkg1fw29.eot?t=1498725627687#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/font_og13f713pkg1fw29.woff?t=1498725627687') format('woff'), /* chrome, firefox */
+    url('//at.alicdn.com/t/font_og13f713pkg1fw29.ttf?t=1498725627687') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/font_og13f713pkg1fw29.svg?t=1498725627687#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.control-label {
+    line-height: 32px;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    font-weight: normal !important;
+}
+
+.hotel_title {
+    margin-bottom: 5px;
+    display: block;
+    height: 20px;
+    overflow: hidden;
+}
+
+.hotel_xinxi {
+    height: 20px;
+    overflow: hidden;
+}
+
+.hotel_xinxi span {
+    margin-right: 5px
+}
+
+.hotel_status {
+    color: #5cb85c;
+}
+.hotel_status1 {
+    color:#5cb85c;
+}
+.hotel_status2 {
+    color:red;
+}
+
+.row .well-lg {
+    padding: 15px 20px;
+    background: white;
+    cursor: pointer;
+}
+
+.row .active {
+    border: 1px solid #5cb85c;
+}
+
+.row .hotel_active {
+    display: none
+}
+
+.row .active .hotel_active {
+    height: 25px;
+    width: 25px;
+    background: url(/images/u1770.png) no-repeat;
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    display: block;
+}
+
+.glyphicon-ok {
+    color: #5cb85c;
+    position: absolute;
+}
+
+.part3 .hotel_lxfs {
+    color: #3E9BEA
+}
+
+.part3 {
+    overflow: hidden;
+}
+
+.btn-info {
+    background: #3c8dbc
+}
+
+.dataTables_filter {
+    float: left;
+}
+
+table tr {
+    text-align: center;
+    vertical-align: middle;
+}
+
+table tr th {
+    text-align: center;
+    vertical-align: middle !important;
+    position: relative;
+}
+
+.tab-content thead tr {
+    background: #D7E7F1
+}
+
+.xx_modify {
+    background: url(/images/u2021.png) no-repeat;
+    display: block;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+tbody th span {
+    display: block;
+    overflow: hidden;
+}
+
+tbody th span p {
+    display: block;
+}
+
+.No_breakfast {
+    float: left;
+    color: gray
+}
+
+.full {
+    float: right;
+    background: red;
+    color: white;
+    width: 15px;
+}
+
+.over {
+    float: right;
+    background: #ff7a00;
+    color: white;
+    width: 15px;
+}
+
+.surplus {
+    float: right;
+    background: #35ff57;
+    color: white;
+    width: 15px;
+}
+
+.hotel_price {
+    color: #FF9933;
+    font-size: 20px
+}
+
+.status {
+    font-size: 20px
+}
+
+.status_modify {
+    height: 100px;
+    cursor: pointer;
+}
+
+.offline {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.offline .hotel_price {
+    color: rgba(0, 0, 0, 0.26);
+}
+.offline span p {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.modify_time {
+    width: 80%;
+    float: left;
+}
+
+.room {
+    width: 50px
+}
+
+table .checkbox {
+    display: inline;
+}
+
+.noneprice {
+    color: gray
+}
+
+.well-lg {
+    /*height: 100px;*/
+    overflow: hidden;
+    position: relative;
+}
+
+/*批量改房态弹出层*/
+#myModal * {
+    font-size: 14px
+}
+
+#myModal i {
+    background: url("/images/u2284.png") no-repeat;
+    width: 12px;
+    height: 12px;
+    display: block;
+    float: right;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+#myModal .modify_time {
+    width: 80%
+}
+
+#myModal .modal-dialog {
+    width: 900px
+}
+
+#myModal .room {
+    width: 70px
+}
+
+#myModal .price {
+    width: 70px
+}
+
+#myModal .deleteDom {
+    background: url("/images/u2415.png") no-repeat;
+    float: right;
+    margin-right: 5px;
+    margin-top: 12px;
+}
+
+/*批量改房价弹出层*/
+#Bchangeprice * {
+    font-size: 14px
+}
+
+#Bchangeprice .modal-dialog {
+    width: 900px
+}
+
+#Bchangeprice i {
+    background: url("/images/u2284.png") no-repeat;
+    width: 12px;
+    height: 12px;
+    display: block;
+    float: right;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+#Bchangeprice .deleteDom {
+    background: url("/images/u2415.png") no-repeat;
+    float: right;
+    margin-right: 5px;
+    margin-top: 12px;
+}
+
+/*增加房型*/
+#Addchamber * {
+    font-size: 14px
+}
+
+#Addchamber .modal-dialog {
+    width: 800px
+}
+
+#Addchamber .point {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+}
+
+#Addchamber label {
+    display: block;
+    line-height: 18px;
+}
+
+#Addchamber .imgupload {
+    margin-left: 52px;
+    padding: 0px;
+    width: 92px
+}
+
+#Addchamber .upload {
+    width: 100%;
+}
+
+#Addchamber .file-drop-zone-title {
+}
+
+#Addchamber .file-input {
+    margin-left: 100px;
+    display: block;
+    width: 55%
+}
+
+/*修改基础房型信息*/
+#Modifyroomxx * {
+    font-size: 14px
+}
+
+#Modifyroomxx .roomsum {
+    text-align: left;
+}
+
+#Modifyroomxx .roomsum label {
+    text-align: left;
+}
+
+#Modifyroomxx .col-sm-1, #Modifyroomxx .col-sm-10, #Modifyroomxx .col-sm-11, #Modifyroomxx .col-sm-12, #Modifyroomxx .col-sm-2, #Modifyroomxx .col-sm-3, #Modifyroomxx .col-sm-4, #Modifyroomxx .col-sm-5, #Modifyroomxx .col-sm-6, #Modifyroomxx .col-sm-7, #Modifyroomxx .col-sm-8, #Modifyroomxx .col-sm-9 {
+    padding-left: 0px
+}
+
+#Modifyroomxx .textmoney {
+    text-align: left;
+}
+
+/*修改房子状态*/
+#Modifyroomstatus .col-sm-1, #Modifyroomstatus .col-sm-10, #Modifyroomstatus .col-sm-11, #Modifyroomstatus .col-sm-12, #Modifyroomstatus .col-sm-2, #Modifyroomstatus .col-sm-3, #Modifyroomstatus .col-sm-4, #Modifyroomstatus .col-sm-5, #Modifyroomstatus .col-sm-6, #Modifyroomstatus .col-sm-7, #Modifyroomstatus .col-sm-8, #Modifyroomstatus .col-sm-9 {
+    padding-left: 0px
+}
+
+.col-sm-8 .col-sm-3 {
+    display: block;
+    padding-top: 10px;
+}
+
+.status_modify:hover {
+    background-color: #d0d0d0;
+}
+
+#search {
+    margin: 18px;
+}
+
+a:hover {
+    text-decoration: none;
+}

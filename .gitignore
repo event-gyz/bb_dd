@@ -1,0 +1,14 @@
+.idea/
+/runtime
+/web/assets
+.idea/
+config/
+web/uploads
+vendor/
+.buildpath
+.project
+.settings/org.eclipse.php.core.prefs
+.settings/org.eclipse.php.debug.core.Debug_Process_Preferences.prefs
+.settings/org.eclipse.wst.validation.prefs
+/nbproject/private/
+web/excel

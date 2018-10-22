@@ -1,0 +1,872 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @title --
+ * @authors goodliang
+ * @date 2015-12-26 16:10:17
+ * 
+ */
+
+body {
+    background: #eeeeee;
+}
+.height_auto{
+    height: auto !important;
+}
+.main {
+    float: left;    width: 750px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.mapArea {
+    float: right;
+    width: 400px;
+    padding-top: 30px;
+}
+ul,li{list-style: none;}
+.map {
+    width: 398px;
+    height: 398px;
+    border: 1px solid #dbdbdb;
+}
+
+.search-topBar {width: 100%;border-top:3px #56bef3 solid;font-size: 16px; line-height: 40px; position: relative; padding:18px 0px;}
+
+.searchBox {
+    height: 40px;
+    overflow: hidden;
+    border-radius: 2px;
+    background: #fff;
+    margin-right: 104px;
+    border: #d3d6df 1px solid;
+}
+
+.search-btn {
+    background: #59bdf1;
+    border-radius: 2px;
+    width: 94px;
+    position: absolute;
+    top: 18px;
+    right: 0px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+.search-btn:hover {
+    color: #fff;
+	background-color:#59bdf1;
+}
+
+.toCity {
+    float: left;
+    border-right: 1px solid #dcdcdc;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.searchWrap {
+    display: table-cell;
+    *display: inline-block;
+    width: 2000px;
+    *width: auto;
+    padding: 0 15px;
+}
+
+.searchInput {
+    border: 0;
+    color: #666;
+    outline: none;
+    width: 100%;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+}
+
+.Inp-hover {
+    outline: 0;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+}
+
+.cityLayer {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 445px;
+    padding: 10px 15px 15px;
+    font-size: 12px;
+    background: #fff;
+    font-size: 12px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 9999;
+}
+
+.cityLayer .closeImg {
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 14px;
+    width: 14px;
+    margin-right: 7px;
+    margin-top: 7px
+}
+
+.cityLayer ul {
+    height: 1%;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px
+}
+
+.cityLayer ul:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+
+.cityLayer ul li {
+    float: left;
+    height: 24px;
+    vertical-align: middle;
+    line-height: 24px;
+    overflow: hidden;
+    text-align: left;
+    width: 20%;
+    cursor: pointer;
+}
+
+.cityLayer ul li:hover {
+    color: #a51c30;
+}
+
+.cityLayer .cityNav {
+    border-bottom: 1px solid #e8e8e8;
+    padding-left: 10px;
+    zoom: 1;
+}
+
+.cityLayer .cityNav:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+
+.cityLayer .cityNav span {
+    position: relative;
+    bottom: -1px;
+    float: left;
+    display: inline;
+    margin-right: 28px;
+    cursor: pointer;
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+    text-align: center
+}
+
+.cityLayer .cityNav span.active {
+    border-bottom: 1px solid #a51c30;
+    color: #a51c30;
+    font-weight: bold
+}
+
+.cityName {
+    display: none;
+}
+
+.cityName dl dt{float:left; width:5%; color:#c00;}
+.cityName dl dd{float:left; width:95%;}
+.cityName dl dd ul li{float: left; margin-bottom: 15px; margin-right: 15px; width:auto; height:auto; line-height: normal;}
+
+.filter_area {
+    margin-top: 10px;
+    position: relative;
+    z-index: 100;
+    font-size: 13px;
+    border-bottom: 0 none;
+    padding: 3px 14px;
+    background: #fff;
+}
+
+.filter_b {
+    position: relative;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.filter_title {
+    float: left;
+    display: inline;
+    padding: 14px 0;
+    width: 64px;
+    color: #9ea3a5;
+    margin: 0;
+}
+
+.filter_rbox {
+    margin-left: 64px;
+    position: relative;
+}
+
+.hotel_add ul {
+    margin: 0 !important;
+}
+
+.hotel_add li {
+    float: left;
+    margin-right: 15px;
+    padding: 14px 4px;
+    cursor: pointer;
+}
+
+.hotel_add li.active {
+    margin-bottom: -1px;
+    border-bottom: 1px solid #a51c30;
+    color: #a51c30;
+}
+.hotel_add li:first-child.active {
+    margin-bottom: -1px;
+    border-bottom: 0px;
+    color: #a51c30;
+}
+.hotel_add li.active .arrow {
+    background: url(../images/arrow.png) left 0px no-repeat;
+}
+
+.arrow {
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    margin-left: 3px;
+    background: url(../images/arrow.png) left -57px no-repeat;
+}
+
+.filter_p {
+    padding: 0px 0 8px 0px;
+    overflow: hidden;
+}
+
+.filter_p ul {
+    margin-bottom: 0 !important;
+    overflow: hidden;
+    padding-left:0px;
+}
+
+.filter_p ul li {
+    float: left;
+    width: 66px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 3px;
+    padding: 3px 0;
+    overflow: hidden;
+}
+
+.filter_p li span {
+    padding: 0 5px;
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+}
+
+.filter_p li.on span {
+    background: #a51c30;
+    color: #fff;
+    position: relative;
+}
+
+.filter_p li a {}
+
+.filter_p li.on a {
+    color: #fff;
+}
+
+.filter_p li.on i {
+    visibility: inherit;
+}
+
+.filter_p li i {
+    visibility: hidden;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+
+.filter_rbox .unlimited {
+    float: left;
+    display: inline;
+    padding: 13px 4px;
+    width: 46px;
+    margin-bottom: 0;
+}
+
+.filter_rbox .unlimited.active a {
+    color: #a51c30;
+}
+
+.filter_main {
+    height: 39px;
+    overflow: hidden;
+    padding:0 48px;
+    margin-bottom: 0px;
+}
+.filter_body>div{
+    display: none;
+}
+
+.filter_main li {
+    float: left;
+    padding: 13px 15px 11px 0;
+}
+.filter_main li.active a {
+    float: left;
+    padding: 0 4px;
+    color: #a51c30;
+}
+
+.filter_main li a {
+    float: left;
+    padding: 0 4px;
+}
+.filter_main .unlimited {
+    position: absolute;
+    min-width:inherit;
+    left:-4px;
+    top:0px;
+}
+.filter_rbox .more .iconfont{
+    font-size: 12px;
+    cursor: pointer;
+    color:#9ea3a5;
+}
+.filter_rbox .more{
+    position: absolute;
+    right:11px;
+    top:11px;
+}
+.filter_p .airport li{
+    width:inherit !important;
+    margin-right: 30px;
+}
+.search_hide {
+    display: none;
+}
+
+.filter_more {
+    padding-top: 10px;
+    margin-bottom: -3px;
+}
+
+#filter_more_link {
+    width: 90px;
+    line-height: 30px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    color: #333;
+}
+
+#filter_more_link:hover {
+    text-decoration: none;
+}
+
+.filter_more i {
+    font-size: 12px !important;
+    color: #666;
+    margin-left: 5px;
+}
+
+.search-result {
+    padding: 25px 0 15px;
+    text-align: center;
+}
+
+.search-result span,
+.search-result p {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin: 2px 0;
+	border-radius:20px;
+}
+
+.search-result strong {
+    color: #a51c30;
+}
+
+.search-result span {
+    background: #f8d300;
+    padding: 0 3px 0 5px;
+    margin: 2px 5px;
+    cursor: pointer;
+}
+
+.sort-area {
+    border: 1px solid #e1e1e1;
+    background: #fff;
+    padding: 10px 15px;
+	border-radius:3px;
+}
+
+.sort-area ul {
+    margin-bottom: 0;
+}
+
+.sort-area .pull-left li {
+    float: left;
+    padding-right: 20px;
+}
+
+.sort-area .pull-left li i {
+    font-size: 12px;
+    color: #9ea3a5;
+}
+
+.sort-area .pull-left li.active a {
+    color: #a51c30;
+}
+.sort-area .pull-left li.active i {
+    color:#a51c30;
+}
+.sort-area .pull-right li {
+    float: left;
+}
+
+.sort-area .pull-right li i {
+    color: #c8c8c8;
+}
+
+.sort-area .pull-right li.open i {
+    color: #a51c30;
+}
+
+.sort-area .pull-right a:hover {
+    text-decoration: none;
+}
+
+.sort-area .pull-right li i:hover {
+    color: #a51c30;
+    text-decoration: none;
+}
+
+.sort-area .pull-right li.item {
+    padding: 0 10px;
+}
+
+.metro_Line_head {
+    border-bottom: 1px dotted #ccc;
+    overflow: hidden;
+}
+
+.metro_Line_head li.on a {
+    color: #a51c30;
+}
+
+.metro_Line_box .place {
+    border: 0;
+    margin-bottom: -8px;
+}
+
+.metro_Line_box .filter_p {
+    padding-left: 0;
+}
+
+.metro_Line {
+    display: none;
+}
+
+
+/*搜索列表*/
+
+.place_list {
+    margin-top: 10px;
+    border: 1px solid #EEE;
+    background-color: white;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.hov {
+    background-color: #f9f9f9;
+}
+
+.place_img {
+    float: left;
+    position: relative;
+}
+
+.place_img img {
+    vertical-align: top;
+}
+.place_img .icon{
+    position: absolute;
+    color: #fff;
+    bottom:0;
+    left:0;
+}
+.place_info {
+    float: left;
+    padding: 0 0 0 20px;
+    color: #777;
+    width: 340px;
+}
+.place_info .star{
+    overflow: hidden;
+    display: block;
+    margin-bottom: 3px;
+    color:#e6a000;
+}
+.place_title>em {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    margin-top: 2px;
+    background: #293352;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-style: normal;
+    border-radius: 10px;
+}
+
+.place_title h3 {
+    margin: 0;
+    line-height: 20px;
+    font-size: 16px;
+    margin-left: 22px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    max-width: 230px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.place_title h3 a {
+    color: #333;
+    font-size: 16px;
+}
+
+.place_title .star {
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 0px;
+}
+
+.place_add {
+    margin: 0;
+    padding: 5px 0;
+    font-family: arial;
+    color: #9ea3a5;
+    font-size: 12px;
+    width: 100%;
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+}
+
+.place_prop {
+    font-size: 12px;
+    padding-top: 5px;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-left:0px;
+}
+
+.place_prop li {
+    font-size: 12px;
+    float: left;
+    line-height: 1.8em;
+    width: 49%
+}
+
+.place_icon_area {
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 0px;
+    display: inline-block;
+    *display: inline;
+    zoom:1;
+}
+
+.place_icon {
+    float: left;
+    padding: 0px 6px;
+    font-style: normal;
+    position: relative;
+    color: #FFF;
+    text-align: center;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.place_icon_good {
+    background: #03cecc;
+}
+
+.place_icon_hot {
+    background: #e5004f;
+}
+
+.place_icon_sale {
+    background: #00a0e9;
+}
+
+.place_right {
+    float: right;
+    width: 130px;
+    text-align: right;
+}
+
+.place_right .place_price {
+	margin-bottom:5px;
+}
+
+.place_right em {
+    color: #FF4200;
+	font-family: Verdana,Arial;
+}
+
+.place_price {
+    padding-bottom: 10px;
+	font-size:13px;
+}
+
+.place_price em {
+    font-style: normal;
+    padding-right: 5px;
+	font-size:18px;
+}
+
+.place_btn {
+    background: #e6a000;
+    border-radius: 2px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    color: #fff;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.place_btn:hover{
+    background: #e6a000;
+}
+i.rm{
+    display: none;
+}
+label.checked{
+    background: #ccc;
+}
+
+label.checked i.add{
+    display: none;
+}
+label.checked i.rm{
+    display: inline;
+}
+
+label.checked:hover{
+    background: #bbb;
+}
+
+.place_text {
+    padding: 10px 0 15px;
+    font-size: 13px;
+}
+
+.place_score {
+    font-size: 12px;
+    text-align: right;
+    margin-top: 36px;
+}
+
+.place_score em {
+    font-size: 18px;
+	font-style:normal;
+}
+
+.place_score i {
+    font-size: 18px !important;
+    cursor: pointer;
+	color:#e0e0e0;
+    margin-right: 5px;
+}
+
+.place_score.success i{
+    color:#FF4200;
+}
+
+
+/*地图提示信息*/
+.map_head{
+    overflow: hidden;
+}
+.map_place_img{
+    float: left;
+}
+.map_place_img img{
+    width:80px;
+}
+.map_place_title{
+    float: left;
+    padding-left: 10px;
+    width: 180px;
+}
+.map_place_title .star{
+    display: block;
+    overflow: hidden;
+}
+.map_place_add{
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #666;
+    display:block;
+    width: 100%;
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+}
+.map_place_title h3{
+    margin: 0;
+    padding-top: 5px;
+    font-size: 14px;
+}
+.map_place_info{
+    width: 260px;
+    font-size: 12px;
+}
+.map_place_info ul{
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+.map_place_info li{
+}
+.map_place_info a{
+    color:#0084bb;
+}
+.map_place_info em{
+    color:#a51c30;
+    font-style: normal;
+}
+.select_site{
+    width:396px;
+    border:2px solid #c30f00;
+    margin-bottom: 0 !important;
+    position: absolute;
+    top: 410px;
+    right: 0;
+}
+.select_site .panel-body{
+    padding:10px;
+}
+
+.select_site .panel-heading{
+    background: #c30f00;
+    border-radius: 0;
+    color:#fff;
+    position: relative;
+}
+.select_site .place_btn{
+    position: absolute;
+    padding:2px 3px;
+    right: 10px;
+    top:7px;
+}
+.select_site ul{
+    margin-bottom: 0;
+}
+.select_site li i.icon{
+    float: right;
+    color: #9ea3a5;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.select_site li{
+    overflow: hidden;
+    padding:3px 0;
+    font-size: 12px;
+}
+.select_site li em{
+    color:#9ea3a5;
+    font-size: 12px;
+    font-style: normal;
+    padding-left:5px;
+}
+
+
+#rollobj{
+    overflow: hidden;
+}
+#rollobj img{
+    width: 100%;
+    height: 100%
+}
+
+.select_site  ul{
+    transition:height 1s ;
+    -moz-transition:height 1s ;
+    -webkit-stransition:height 1s ;
+
+}
+.filter_hotel li a{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#seachEmpety{background: url(../images/seachImg.png) no-repeat center top; padding-top:150px; font-size:16px; color:#666;}
+
+
+
+/**editor by carten**/
+#content .select-business{width:77%;}
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

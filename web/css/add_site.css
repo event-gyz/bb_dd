@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @title --
+ * @authors goodliang
+ * @date 2016-02-16 14:50:39
+ * 
+ */
+
+.search-topBar.s_search .searchBox {
+    border: 1px solid #eee;
+}
+
+.search-btn {
+    line-height: 42px;
+}
+.site_content{
+	overflow: auto;
+	max-height: 935px;
+}
+.site_main {
+    border: 1px solid #eee;
+    padding: 0px 15px 15px;
+    margin-top: 30px;
+}
+
+.site_list {
+    background: #f9f6f6;
+    padding: 15px;
+    border: 1px solid #fff;
+    position: relative;
+    margin-bottom: 15px;
+}
+.site_list:hover{
+	border:1px solid #f0ac29;
+	background: #f9f6f6
+}
+.site_list dl{
+	margin-bottom: 0;
+}
+.site_list dt {
+    float: left;
+}
+
+.site_list dd {
+    margin-left: 230px;
+    overflow: hidden;
+}
+
+.site_list dd.tit {
+	font-size: 16px;
+	padding: 0px 0 5px;
+}
+
+.site_list dd.info {
+    color: #999;
+    padding-bottom: 60px;
+}
+.site_list .checkbox{
+	position: absolute;
+	right: 10px;
+	top:60px;
+}
+.site_btn{
+    overflow: hidden;
+    padding: 20px 0;
+}
+.site_btn .btn{
+    margin-right: 10px;
+}

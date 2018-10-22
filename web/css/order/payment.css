@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/**
+ * 
+ * @title --
+ * @authors goodliang
+ * @date 2016-04-12 11:30:01
+ * 
+ */
+.red{
+    color:#a51c30;
+    font-size: 16px;
+    font-style: normal;
+    
+}
+.pay_main{
+	border:1px solid #ddd;
+	overflow: hidden;
+	margin: 20px;
+}
+.pay_title{
+	background: #eee;
+	padding: 10px 20px;
+}
+.payment_mode{
+	padding: 20px;
+	overflow: hidden;
+}
+.payment_mode ul{
+    margin-bottom: 0;
+}
+.payment_mode li{
+	   overflow: hidden;
+    padding: 5px 12px;
+    margin-right:15px;
+    border:2px solid #fff;
+    position: relative;
+    cursor: pointer;
+    color:#999;
+}
+.payment_mode li.line{
+	border:0;
+	padding: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	border-bottom:1px solid #ddd;
+}
+.payment_mode li .iconfont{
+    display: none;
+    position: absolute;
+    right: -1px;
+    bottom:-3px;
+    color:#be0000;
+}
+.payment_mode li.active{
+    border:2px solid #be0000 ;
+}
+.payment_mode li.active .iconfont{
+    display: block;
+}
+.payment_mode li strong{
+    color:#666;
+    padding-right: 20px;
+}
+.pay_info{
+	padding: 30px 0 ; overflow: hidden;
+}
+.pay_info .form-control-static{
+	min-height:inherit;
+	padding-bottom: 0;
+}
+.pay_layer{
+	padding: 20px;
+	overflow: hidden;
+	display: none;
+}
+.pay_icon {
+	color:#666;
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+.pay_icon i.iconfont{
+	font-size:30px;
+	color:#3dc433;
+	margin-right: 5px;
+}
+.pay_icon span.pull-left {
+	padding-right: 20px;
+}
+.info_block i.iconfont{
+	color:#e59125;
+	margin-right: 5px;
+}
+.pay_password {
+	min-height: 400px;
+	padding-top: 30px;
+}
+.pay_password li{
+	padding: 20px 0;
+	overflow: hidden;
+	border-bottom:1px solid #ddd;
+}
+.pay_password li strong{
+	font-size: 14px;
+	padding-right: 20px;
+}
+.pay_password li small{
+	color:#999;
+}
+.pay_addPassword{
+	padding: 30px 0;
+	overflow: hidden;
+}
